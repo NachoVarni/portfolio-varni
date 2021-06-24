@@ -1,0 +1,127 @@
+.main {
+  color: #ffe2d1;
+
+  .presentation {
+    position: absolute;
+    left: 400px;
+    top: 200px;
+  }
+
+  .menu {
+    position: absolute;
+    right: 700px;
+    width: 500px;
+    top: 200px;
+
+    .option {
+      list-style: none;
+      border-radius: 15px;
+      padding: 20px;
+    }
+
+    .option:hover {
+      cursor: pointer;
+      color: #363636;
+      animation-name: colorful;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+    }
+  }
+}
+
+@keyframes colorful {
+  0% {
+    background-color: #7899d4;
+  }
+  25% {
+    background-color: #afc43c;
+  }
+  50% {
+    background-color: #f7091d;
+  }
+  75% {
+    background-color: #7edcf8;
+  }
+  100% {
+    background-color: #ace708;
+  }
+}
+
+@keyframes hideMenu {
+  from {
+    right: 700px;
+    opacity: 1;
+  }
+  to {
+    right: 0px;
+    opacity: 1;
+    color: rgb(17, 16, 16);
+  }
+}
+
+@keyframes showMenu {
+  from {
+    right: 0px;
+    opacity: 0;
+    color: rgb(17, 16, 16);
+  }
+  to {
+    right: 700px;
+    opacity: 1;
+    color: #ffe2d1;
+  }
+}
+
+@keyframes showPresentation {
+  from {
+    left: -1000px;
+    opacity: 0;
+    color: rgb(17, 16, 16);
+  }
+  to {
+    left: 400px;
+    opacity: 1;
+    color: #ffe2d1;
+  }
+}
+
+@keyframes hidePresentation {
+  from {
+    left: 400px;
+    opacity: 1;
+  }
+  to {
+    left: -1000px;
+    opacity: 0;
+    color: rgb(17, 16, 16);
+  }
+}
+
+.presentationShow {
+  animation-duration: 4s;
+  animation-name: showPresentation;
+}
+
+.presentationHide {
+  animation-duration: 4s;
+  animation-name: hidePresentation;
+  animation-fill-mode: forwards;
+}
+
+.menuShow {
+  animation-name: showMenu;
+  animation-duration: 4s;
+}
+
+.menuHide {
+  animation-name: hideMenu;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-top: 1000px;
+}

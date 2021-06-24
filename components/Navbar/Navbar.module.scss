@@ -1,0 +1,54 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  color: #ffe2d1;
+  z-index: 9999;
+  width: 100%;
+  background-color: rgb(17, 16, 16);
+  overflow: hidden;
+
+  .option {
+    cursor: pointer;
+  }
+}
+
+@keyframes showArrow {
+  from {
+    opacity: 0;
+    color: rgb(17, 16, 16);
+  }
+  to {
+    opacity: 1;
+    color: #ffe2d1;
+  }
+}
+
+@keyframes showHamburguer {
+  from {
+    opacity: 0;
+    color: rgb(17, 16, 16);
+  }
+  to {
+    opacity: 1;
+    color: #ffe2d1;
+  }
+}
+
+.hamburguerShow {
+  animation-duration: 4s;
+  animation-name: showHamburguer;
+
+  .hamFont {
+    font-size: 40px;
+  }
+}
+
+.arrowShow {
+  animation-name: showArrow;
+  animation-duration: 4s;
+
+  .arrowFont {
+    font-size: 40px;
+  }
+}
