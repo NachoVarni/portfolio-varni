@@ -24,7 +24,7 @@ function Hero() {
             showOptions ? styles.presentationHide : styles.presentationShow
           }`}
         >
-          <h2>Hi there! I'm Ignacio Varni, a frontend developer</h2>
+          <h2>Hi there! I am Ignacio Varni, a frontend developer</h2>
         </div>
 
         {showOptions && (
