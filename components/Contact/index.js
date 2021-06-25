@@ -3,11 +3,21 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelopeOpenText } from "@fortawesome/free-solid-svg-icons";
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
+import ScrollArrow from "../ScrollArrow";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function Contact() {
+  useEffect(() => {
+    Aos.init({ duration: 3000 });
+  }, []);
+
   return (
-    <div id="contact" className={styles.main}>
-      <h2 className={styles.contact}>contact</h2>
+    <div id="contact" className={styles.main} data-aos="slide-right">
+      <ScrollArrow arrowDirec={faArrowUp} className="arrow-up" direct="menu" />
+      <h2 className={styles.contact}> contact </h2>
       <div className={styles.wrapper}>
         <span className={styles.contactData}>
           <FontAwesomeIcon icon={faEnvelopeOpenText} />
@@ -25,7 +35,7 @@ function Contact() {
           https://www.linkedin.com/in/ignacio-varni
         </a>
       </div>
-      <h2 className={styles.contact}>/ contact</h2>
+      <h2 className={styles.contact}> / contact </h2>
     </div>
   );
 }

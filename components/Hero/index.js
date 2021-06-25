@@ -1,6 +1,6 @@
 import styles from "./Hero.module.scss";
 import Navbar from "../Navbar";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Skills from "../Skills";
 import Work from "../Work";
 import Contact from "../Contact";
@@ -16,10 +16,11 @@ function Hero() {
   }
 
   return (
-    <div className={styles.main}>
+    <div className={styles.main} id="menu">
       <Navbar showMenu={showMenu} showOptions={showOptions} />
       <div className={styles.hero}>
         <div
+          id="presentation"
           className={`${styles.presentation} ${
             showOptions ? styles.presentationHide : styles.presentationShow
           }`}
@@ -36,8 +37,12 @@ function Hero() {
             <Link activeClass="active" to="skills" spy={true} smooth={true}>
               <li className={styles.option}>Skills</li>
             </Link>
-            <li className={styles.option}>Work</li>
-            <li className={styles.option}>Contact</li>
+            <Link activeClass="active" to="work" spy={true} smooth={true}>
+              <li className={styles.option}>Work</li>
+            </Link>
+            <Link activeClass="active" to="contact" spy={true} smooth={true}>
+              <li className={styles.option}>Contact</li>
+            </Link>
           </ul>
         )}
       </div>

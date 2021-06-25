@@ -1,14 +1,22 @@
 .main {
+  background-color: rgb(17, 16, 16);
   color: #ffe2d1;
+
+  .hero {
+    background-color: rgb(17, 16, 16);
+    min-height: 100vh;
+  }
 
   .presentation {
     position: absolute;
+    font-size: 3rem;
     left: 400px;
     top: 200px;
   }
 
   .menu {
     position: absolute;
+    font-size: 3rem;
     right: 700px;
     width: 500px;
     top: 200px;
@@ -123,5 +131,4 @@
   display: flex;
   flex-direction: column;
   margin-left: 50px;
-  margin-top: 1000px;
 }
