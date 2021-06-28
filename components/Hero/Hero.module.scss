@@ -1,6 +1,6 @@
 .main {
   background-color: rgb(17, 16, 16);
-  color: #1d7874;
+  color: #f4c095;
   font-family: "Poppins", sans-serif;
 
   .hero {
@@ -10,15 +10,14 @@
 
   .presentation {
     position: absolute;
-    font-size: 2rem;
+    font-size: 4rem;
     left: 200px;
     top: 200px;
-    color: #1d7874;
   }
 
   .menu {
     position: absolute;
-    font-size: 3rem;
+    font-size: 4rem;
     left: 200px;
     width: 500px;
     top: 200px;
@@ -78,7 +77,7 @@
   to {
     left: 200px;
     opacity: 1;
-    color: #ffe2d1;
+    color: #f4c095;
   }
 }
 
@@ -91,7 +90,7 @@
   to {
     left: 200px;
     opacity: 1;
-    color: #1d7874;
+    color: #f4c095;
   }
 }
 

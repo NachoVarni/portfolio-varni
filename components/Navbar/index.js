@@ -9,7 +9,7 @@ function Navbar({ showMenu, showOptions }) {
   return (
     <div className={styles.main}>
       <div className={styles.left}>
-        <span className={styles.option}>Logo</span>
+        <span className={styles.option}></span>
       </div>
       <div className={styles.right}>
         {!showOptions && (
