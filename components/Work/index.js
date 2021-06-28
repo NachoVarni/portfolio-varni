@@ -13,7 +13,7 @@ function Work() {
 
   return (
     <div id="work" className={styles.main} data-aos="slide-right">
-      <ScrollArrow arrowDirec={faArrowUp} className="arrow-up" direct="menu" />
+      {/* <ScrollArrow arrowDirec={faArrowUp} className="arrow-up" direct="menu" /> */}
       <h2 className={styles.work}> work </h2>
       <div className={styles.wrapper}>
         <div>Project 1</div>
@@ -22,7 +22,7 @@ function Work() {
       </div>
 
       <h2 className={styles.work}>/ work </h2>
-      <ScrollArrow arrowDirec={faArrowDown} className="arrow-down" />
+      {/* <ScrollArrow arrowDirec={faArrowDown} className="arrow-down" /> */}
     </div>
   );
 }

@@ -2,11 +2,16 @@
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  color: #ffe2d1;
+  color: #1d7874;
   z-index: 9999;
   width: 100%;
   background-color: rgb(17, 16, 16);
   overflow: hidden;
+  font-family: poppins;
+
+  .right {
+    margin-right: 20px;
+  }
 
   .option {
     cursor: pointer;

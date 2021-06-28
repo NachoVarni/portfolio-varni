@@ -13,8 +13,8 @@ function Skills() {
   }, []);
 
   return (
+    // <ScrollArrow arrowDirec={faArrowUp} direct="menu" className="arrow-up" />
     <div className={styles.main} id="skills" data-aos="slide-right">
-      <ScrollArrow arrowDirec={faArrowUp} direct="menu" className="arrow-up" />
       <h2 className={styles.skills}>skills</h2>
       <ul className={styles.list}>
         <li>Next.js</li>
@@ -27,8 +27,8 @@ function Skills() {
         <li>Passport, multer, bcrypt</li>
       </ul>
       <h2 className={styles.skills}>/ skills</h2>
-      <ScrollArrow arrowDirec={faArrowDown} className="arrow-down" />
     </div>
+    // <ScrollArrow arrowDirec={faArrowDown} className="arrow-down" />
   );
 }
 

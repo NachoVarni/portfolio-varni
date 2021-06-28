@@ -1,6 +1,7 @@
 .main {
   background-color: rgb(17, 16, 16);
-  color: #ffe2d1;
+  color: #1d7874;
+  font-family: "Poppins", sans-serif;
 
   .hero {
     background-color: rgb(17, 16, 16);
@@ -9,15 +10,16 @@
 
   .presentation {
     position: absolute;
-    font-size: 3rem;
-    left: 400px;
+    font-size: 2rem;
+    left: 200px;
     top: 200px;
+    color: #1d7874;
   }
 
   .menu {
     position: absolute;
     font-size: 3rem;
-    right: 700px;
+    left: 200px;
     width: 500px;
     top: 200px;
 
@@ -57,7 +59,7 @@
 
 @keyframes hideMenu {
   from {
-    right: 700px;
+    left: 700px;
     opacity: 1;
   }
   to {
@@ -69,12 +71,12 @@
 
 @keyframes showMenu {
   from {
-    right: 0px;
+    left: 1000px;
     opacity: 0;
     color: rgb(17, 16, 16);
   }
   to {
-    right: 700px;
+    left: 200px;
     opacity: 1;
     color: #ffe2d1;
   }
@@ -87,15 +89,15 @@
     color: rgb(17, 16, 16);
   }
   to {
-    left: 400px;
+    left: 200px;
     opacity: 1;
-    color: #ffe2d1;
+    color: #1d7874;
   }
 }
 
 @keyframes hidePresentation {
   from {
-    left: 400px;
+    left: 200px;
     opacity: 1;
   }
   to {

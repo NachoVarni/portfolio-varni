@@ -16,22 +16,25 @@ function Contact() {
 
   return (
     <div id="contact" className={styles.main} data-aos="slide-right">
-      <ScrollArrow arrowDirec={faArrowUp} className="arrow-up" direct="menu" />
+      {/* <ScrollArrow arrowDirec={faArrowUp} className="arrow-up" direct="menu" /> */}
       <h2 className={styles.contact}> contact </h2>
       <div className={styles.wrapper}>
         <span className={styles.contactData}>
-          <FontAwesomeIcon icon={faEnvelopeOpenText} />
+          <FontAwesomeIcon icon={faEnvelopeOpenText} className={styles.logo} />
           nachovarni6@gmail.com
         </span>
-        <span>
-          <FontAwesomeIcon icon={faGithub} />
+        <span className={styles.contactData}>
+          <FontAwesomeIcon icon={faGithub} className={styles.logo} />
           <a href="https://github.com/NachoVarni">
             https://github.com/NachoVarni
           </a>
         </span>
 
-        <a href="https://www.linkedin.com/in/ignacio-varni-337970203/">
-          <FontAwesomeIcon icon={faLinkedin} />
+        <a
+          className={styles.contactData}
+          href="https://www.linkedin.com/in/ignacio-varni-337970203/"
+        >
+          <FontAwesomeIcon icon={faLinkedin} className={styles.logo} />
           https://www.linkedin.com/in/ignacio-varni
         </a>
       </div>

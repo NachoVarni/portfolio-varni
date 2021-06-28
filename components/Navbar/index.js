@@ -12,9 +12,6 @@ function Navbar({ showMenu, showOptions }) {
         <span className={styles.option}>Logo</span>
       </div>
       <div className={styles.right}>
-        {/* <Link activeClass="active" to="skills" spy={true} smooth={true}>
-          <FontAwesomeIcon icon={faArrowDown} />
-        </Link> */}
         {!showOptions && (
           <span
             className={`${styles.option} ${styles.hamburguerShow}`}
