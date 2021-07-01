@@ -24,12 +24,21 @@
   justify-content: space-between;
   color: #679289;
 
-  .wrapper {
+  @media (max-width: 812px) {
     font-size: 3rem;
+  }
+
+  .wrapper {
     margin: 30px 0px 30px 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    @media (max-width: 812px) {
+      flex-direction: column;
+      justify-content: space-between;
+      margin-left: 0px;
+    }
   }
 
   .card {
@@ -44,6 +53,10 @@
       overflow: hidden;
       display: flex;
       justify-content: center;
+
+      @media (max-width: 812px) {
+        height: 100px;
+      }
     }
 
     .desc {
@@ -55,6 +68,10 @@
       // background-color: var(--blue-gray);
       animation-name: showDesc;
       animation-duration: 2s;
+
+      @media (max-width: 812px) {
+        transform: scale(1.1);
+      }
 
       .desc {
         display: block;
