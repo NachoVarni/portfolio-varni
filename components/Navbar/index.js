@@ -22,12 +22,17 @@ function Navbar({ showMenu, showOptions }) {
         )}
 
         {showOptions && (
-          <p
-            onClick={showMenu}
-            className={`${styles.option} ${styles.arrowShow}`}
-          >
-            <FontAwesomeIcon icon={faArrowLeft} className={styles.arrowFont} />
-          </p>
+          <Link activeClass="active" to="menu" spy={true} smooth={true}>
+            <span
+              onClick={showMenu}
+              className={`${styles.option} ${styles.arrowShow}`}
+            >
+              <FontAwesomeIcon
+                icon={faArrowLeft}
+                className={styles.arrowFont}
+              />
+            </span>
+          </Link>
         )}
       </div>
     </div>

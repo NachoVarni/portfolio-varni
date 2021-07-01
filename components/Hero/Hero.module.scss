@@ -1,10 +1,10 @@
 .main {
-  background-color: rgb(17, 16, 16);
+  background-color: var(--dark-blue);
   color: #f4c095;
   font-family: "Poppins", sans-serif;
 
   .hero {
-    background-color: rgb(17, 16, 16);
+    background-color: var(--color-background);
     min-height: 100vh;
   }
 

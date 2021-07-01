@@ -30,6 +30,7 @@ function Hero() {
 
         {showOptions && (
           <ul
+            id="menu"
             className={`${styles.menu} ${
               showOptions ? styles.menuShow : styles.menuHide
             }`}

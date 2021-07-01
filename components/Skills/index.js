@@ -9,7 +9,7 @@ import ScrollArrow from "../ScrollArrow";
 
 function Skills() {
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 1000 });
   }, []);
 
   return (
