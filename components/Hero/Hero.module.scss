@@ -2,6 +2,7 @@
   background-color: var(--dark-blue);
   color: #f4c095;
   font-family: "Poppins", sans-serif;
+  width: 100%;
 
   .hero {
     background-color: var(--color-background);
@@ -15,6 +16,11 @@
     font-size: 4rem;
     left: 200px;
     top: 200px;
+
+    @media (max-width: 812px) {
+      left: 20px;
+      top: 20px;
+    }
   }
 
   .menu {
