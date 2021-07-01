@@ -6,6 +6,8 @@
   .hero {
     background-color: var(--color-background);
     min-height: 100vh;
+    position: relative;
+    width: 100%;
   }
 
   .presentation {
@@ -58,24 +60,24 @@
 
 @keyframes hideMenu {
   from {
-    left: 700px;
-    opacity: 1;
+    transform: translateX(0);
+    opacity: 0;
   }
   to {
-    right: 0px;
-    opacity: 1;
+    transform: translateX(300%);
+    opacity: 0;
     color: rgb(17, 16, 16);
   }
 }
 
 @keyframes showMenu {
   from {
-    left: 1000px;
+    transform: translateX(300%);
     opacity: 0;
     color: rgb(17, 16, 16);
   }
   to {
-    left: 200px;
+    transform: translateX(0%);
     opacity: 1;
     color: #f4c095;
   }
@@ -83,12 +85,12 @@
 
 @keyframes showPresentation {
   from {
-    left: -1000px;
-    opacity: 0;
+    transform: translateX(-100%);
+    opacity: 1;
     color: rgb(17, 16, 16);
   }
   to {
-    left: 200px;
+    transform: translateX(0%);
     opacity: 1;
     color: #f4c095;
   }
@@ -96,35 +98,36 @@
 
 @keyframes hidePresentation {
   from {
-    left: 200px;
+    transform: translateX(0);
     opacity: 1;
   }
   to {
-    left: -1000px;
+    transform: translateX(-100%);
     opacity: 0;
     color: rgb(17, 16, 16);
   }
 }
 
 .presentationShow {
-  animation-duration: 4s;
+  animation-duration: 2s;
   animation-name: showPresentation;
+  animation-fill-mode: forwards;
 }
 
 .presentationHide {
-  animation-duration: 4s;
+  animation-duration: 1s;
   animation-name: hidePresentation;
   animation-fill-mode: forwards;
 }
 
 .menuShow {
   animation-name: showMenu;
-  animation-duration: 4s;
+  animation-duration: 2s;
 }
 
 .menuHide {
   animation-name: hideMenu;
-  animation-duration: 4s;
+  animation-duration: 2s;
   animation-fill-mode: forwards;
 }
 
