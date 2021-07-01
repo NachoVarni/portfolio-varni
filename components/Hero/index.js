@@ -17,7 +17,7 @@ function Hero() {
 
   return (
     <div className={styles.main} id="menu">
-      {/* <Navbar showMenu={showMenu} showOptions={showOptions} /> */}
+      <Navbar showMenu={showMenu} showOptions={showOptions} />
       <div className={styles.hero}>
         <div
           id="presentation"
