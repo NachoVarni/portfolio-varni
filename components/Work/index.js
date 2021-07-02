@@ -19,7 +19,13 @@ function Work() {
       <div className={styles.wrapper}>
         <div className={`${styles.card} `}>
           <div className={styles.projectPic}>
-            <Image src={spotifyLogo} alt="spotify" />
+            <Image
+              src={spotifyLogo}
+              alt="spotify"
+              width={177}
+              height={100}
+              quality={65}
+            />
           </div>
           <div className={styles.desc}>
             <p>
@@ -37,8 +43,14 @@ function Work() {
         </div>
 
         <div className={`${styles.card} `}>
-          <div className={styles.projectPic}>
-            <Image src={toyotaPic} alt="toyota" />
+          <div className={`${styles.projectPic} ${styles.toyota}`}>
+            <Image
+              src={toyotaPic}
+              alt="toyota"
+              width={277}
+              height={100}
+              quality={100}
+            />
           </div>
           <div className={styles.desc}>
             <p>A Toyota Page simulation. Framework: Next.js</p>
@@ -58,8 +70,14 @@ function Work() {
         </div>
 
         <div className={`${styles.card} `}>
-          <div className={styles.projectPic}>
-            <Image src={nodeLogo} alt="node" />
+          <div className={`${styles.projectPic} ${styles.node}`}>
+            <Image
+              src={nodeLogo}
+              alt="node"
+              width={177}
+              height={100}
+              quality={65}
+            />
           </div>
           <div className={styles.desc}>
             <p>
