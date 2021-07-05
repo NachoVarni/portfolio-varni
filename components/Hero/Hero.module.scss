@@ -9,33 +9,30 @@
     background-color: var(--color-background);
     min-height: 100vh;
     position: relative;
-    top: 5em;
     width: 100%;
     font-size: 2rem;
   }
 
   .presentation {
     position: absolute;
-    left: 5em;
+    left: 10%;
+    top: 30%;
 
     @media (max-width: 812px) {
       font-size: 0.9rem;
-      left: 1em;
-      top: 2em;
+      left: 5%;
     }
   }
 
   .menu {
     position: absolute;
-    left: 5em;
+    top: 30%;
+    left: 10%;
     width: 80%;
     font-weight: bold;
 
     @media (max-width: 812px) {
-      left: 0.5em;
-      top: 2em;
       font-size: 1.5rem;
-      width: 20rem;
     }
 
     .option {
@@ -82,6 +79,7 @@
     opacity: 0;
     color: rgb(17, 16, 16);
     display: none;
+    pointer-events: none;
   }
 }
 
