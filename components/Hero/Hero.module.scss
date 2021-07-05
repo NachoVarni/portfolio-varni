@@ -1,7 +1,7 @@
 .main {
   background-color: var(--dark-blue);
-  color: #f4c095;
-  font-family: "Poppins", sans-serif;
+  color: var(--light-pink);
+  font-family: var(--ff-primary);
   width: 100%;
   position: relative;
 
@@ -9,41 +9,38 @@
     background-color: var(--color-background);
     min-height: 100vh;
     position: relative;
-    top: 80px;
+    top: 5em;
     width: 100%;
+    font-size: 2rem;
   }
 
   .presentation {
     position: absolute;
-    font-size: 4rem;
-    left: 200px;
-    top: 200px;
+    left: 5em;
 
     @media (max-width: 812px) {
-      font-size: 2rem;
-      left: 20px;
-      top: 40px;
+      font-size: 0.8rem;
+      left: 2em;
+      top: 2em;
     }
   }
 
   .menu {
     position: absolute;
-    font-size: 4rem;
-    left: 200px;
-    width: 500px;
-    top: 200px;
+    left: 5em;
+    width: 80%;
 
     @media (max-width: 812px) {
-      left: 20px;
-      top: 20px;
-      width: 200px;
-      font-size: 2rem;
+      left: 0.5em;
+      top: 2em;
+      font-size: 1rem;
+      width: 20rem;
     }
 
     .option {
       list-style: none;
-      border-radius: 15px;
-      padding: 20px;
+      border-radius: 1rem;
+      padding: 1.3em;
     }
 
     .option:hover {
@@ -80,15 +77,16 @@
     opacity: 0;
   }
   to {
-    transform: translateX(70%);
+    transform: translateX(10%);
     opacity: 0;
     color: rgb(17, 16, 16);
+    display: none;
   }
 }
 
 @keyframes showMenu {
   from {
-    transform: translateX(70%);
+    transform: translateX(10%);
     opacity: 0;
     color: rgb(17, 16, 16);
   }

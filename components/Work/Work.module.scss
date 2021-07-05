@@ -17,49 +17,48 @@
 
 .main {
   min-height: 100vh;
-  padding: 100px 0px 50px 0px;
-  font-size: 4rem;
+  padding: 3.5rem 0px 1rem 0px;
+  font-size: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   color: #679289;
 
   @media (max-width: 812px) {
-    font-size: 3rem;
+    font-size: 1rem;
   }
 
   .wrapper {
-    margin: 30px 0px 30px 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 100%;
 
     @media (max-width: 812px) {
       flex-direction: column;
-      justify-content: space-between;
-      margin-left: 0px;
+
+      font-size: 0.5rem;
     }
   }
 
   .card {
-    width: 300px;
-    height: 300px;
-
+    width: 20%;
     @media (max-width: 812px) {
-      width: 250px;
+      width: 80%;
+      margin: 2em 0em;
     }
 
     .projectPic {
       width: 100%;
-      height: 140px;
-      border-radius: 30px;
+      height: 7em;
+      border-radius: 1em;
       background-color: black;
       overflow: hidden;
       display: flex;
       justify-content: center;
 
       @media (max-width: 812px) {
-        height: 100px;
+        height: 7rem;
       }
     }
 
@@ -86,135 +85,16 @@
       }
 
       .desc {
-        display: block;
         display: flex;
         flex-direction: column;
         color: var(--light-pink);
-        margin-top: 10px;
-        font-size: 1.4rem;
-        padding: 10px;
-
-        @media (max-width: 812px) {
-          font-size: 1.2rem;
-        }
+        font-size: 0.8rem;
+        padding: 1em;
 
         .list {
-          margin-top: 20px;
-
-          .item {
-            margin-bottom: 10px;
-          }
+          margin-top: 1em;
         }
       }
     }
   }
-
-  // .card {
-  //   background-color: #ffffff;
-  //   --text: black;
-  //   position: relative;
-  //   height: 12rem;
-  //   box-shadow: 0 0 2rem -1rem rgba(0, 0, 0, 0.05);
-  //   .multiButton {
-  //     z-index: 0;
-  //     position: absolute;
-  //     top: 1.25rem;
-  //     left: 1.25rem;
-  //     border-radius: 100%;
-  //     width: 0rem;
-  //     height: 0rem;
-  //     transform: translate(-50%, -50%);
-  //     transition: 0.25s cubic-bezier(0.25, 0, 0, 1);
-  //     .icon {
-  //       display: grid;
-  //       place-items: center;
-  //       position: absolute;
-  //       width: 2rem;
-  //       height: 2rem;
-  //       border: none;
-  //       border-radius: 100%;
-  //       background: var(--red);
-  //       color: var(--lile);
-  //       transform: translate(-50%, -50%);
-  //       cursor: pointer;
-  //       transition: 0.25s cubic-bezier(0.25, 0, 0, 1);
-  //       box-shadow: 0 0 0rem -0.25rem var(--background);
-  //       &:hover {
-  //         background: var(--text);
-  //         color: var(--background);
-  //         box-shadow: 0 0 1rem -0.25rem var(--background);
-  //       }
-  //       &:first-child:nth-last-child(1),
-  //       &:first-child:nth-last-child(1) ~ * {
-  //         //If there is 1 child
-  //         &:nth-child(1) {
-  //           left: 25%;
-  //           top: 25%;
-  //         }
-  //       }
-  //       &:first-child:nth-last-child(2),
-  //       &:first-child:nth-last-child(2) ~ * {
-  //         //If there are 2 children
-  //         &:nth-child(1) {
-  //           left: 37.5%;
-  //           top: 18.75%;
-  //         }
-  //         &:nth-child(2) {
-  //           left: 18.75%;
-  //           top: 37.5%;
-  //         }
-  //       }
-  //       &:first-child:nth-last-child(3),
-  //       &:first-child:nth-last-child(3) ~ * {
-  //         //If there are 3 children
-  //         &:nth-child(1) {
-  //           left: 50%;
-  //           top: 15.625%;
-  //         }
-  //         &:nth-child(2) {
-  //           left: 25%;
-  //           top: 25%;
-  //         }
-  //         &:nth-child(3) {
-  //           left: 15.625%;
-  //           top: 50%;
-  //         }
-  //       }
-  //       &:first-child:nth-last-child(4), //If there are 4 children, if first child is also 4th item from bottom get self, and
-  //           &:first-child:nth-last-child(4) ~ * {
-  //         //If there are 4 children, if first child is also 4th item from bottom get siblings
-  //         &:nth-child(1) {
-  //           left: 62.5%;
-  //           top: 18.75%;
-  //         }
-  //         &:nth-child(2) {
-  //           left: 37.5%;
-  //           top: 18.75%;
-  //         }
-  //         &:nth-child(3) {
-  //           left: 18.75%;
-  //           top: 37.5%;
-  //         }
-  //         &:nth-child(4) {
-  //           left: 18.75%;
-  //           top: 62.5%;
-  //         }
-  //       }
-  //     }
-  //   }
-  //   .container {
-  //     position: absolute;
-  //     width: 100%;
-  //     height: 100%;
-  //     border-radius: 1rem;
-  //     background: var(--background);
-  //     color: var(--text);
-  //   }
-  //   &:hover .multi-button,
-  //   .multi-button:focus-within {
-  //     //Hover or a button inside is focused
-  //     width: 10rem;
-  //     height: 10rem;
-  //   }
-  // }
 }

@@ -96,7 +96,6 @@ function Work() {
       </div>
 
       <h2 className={styles.work}>/ work </h2>
-      {/* <ScrollArrow arrowDirec={faArrowDown} className="arrow-down" /> */}
     </div>
   );
 }
