@@ -19,8 +19,8 @@
     left: 5em;
 
     @media (max-width: 812px) {
-      font-size: 0.8rem;
-      left: 2em;
+      font-size: 0.9rem;
+      left: 1em;
       top: 2em;
     }
   }
@@ -29,11 +29,12 @@
     position: absolute;
     left: 5em;
     width: 80%;
+    font-weight: bold;
 
     @media (max-width: 812px) {
       left: 0.5em;
       top: 2em;
-      font-size: 1rem;
+      font-size: 1.5rem;
       width: 20rem;
     }
 
