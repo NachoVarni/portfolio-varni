@@ -34,15 +34,23 @@ function Hero() {
             showOptions ? styles.menuShow : styles.menuHide
           }`}
         >
-          <Link activeClass="active" to="skills" spy={true} smooth={true}>
-            <li className={styles.option}>Skills</li>
-          </Link>
-          <Link activeClass="active" to="work" spy={true} smooth={true}>
-            <li className={styles.option}>Work</li>
-          </Link>
-          <Link activeClass="active" to="contact" spy={true} smooth={true}>
-            <li className={styles.option}>Contact</li>
-          </Link>
+          <li className={styles.option}>
+            <Link activeClass="active" to="skills" spy={true} smooth={true}>
+              Skills
+            </Link>
+          </li>
+
+          <li className={styles.option}>
+            <Link activeClass="active" to="work" spy={true} smooth={true}>
+              Work
+            </Link>
+          </li>
+
+          <li className={styles.option}>
+            <Link activeClass="active" to="contact" spy={true} smooth={true}>
+              Contact
+            </Link>
+          </li>
         </ul>
       </div>
       <div className={styles.info}>
