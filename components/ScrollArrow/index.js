@@ -1,12 +1,15 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./ScrollArrow.module.scss";
 import { Link } from "react-scroll";
 
-function ScrollArrow({ arrowDirec, className, direct }) {
+function ScrollArrow({ label, className, direct }) {
+  console.log(className);
+
   return (
-    <Link activeClass="active" to={direct} spy={true} smooth={true}>
-      <FontAwesomeIcon icon={arrowDirec} className={styles[className]} />
-    </Link>
+    <div className={styles.redirect}>
+      <Link activeClass="active" to={direct} spy={true} smooth={true}>
+        <span className={styles.option}>{label}</span>
+      </Link>
+    </div>
   );
 }
 

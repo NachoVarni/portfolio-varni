@@ -23,7 +23,21 @@
     line-height: 4rem;
     margin-left: 2em;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    min-height: 15em;
+
+    .contactWrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .redirect {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
 
     @media (max-width: 812px) {
       font-size: 1rem;

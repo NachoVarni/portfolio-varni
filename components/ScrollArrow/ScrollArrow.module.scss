@@ -1,10 +1,12 @@
-.arrow-up {
-  position: absolute;
-  right: 50px;
-}
+.redirect {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 
-.arrow-down {
-  position: absolute;
-  right: 50px;
-  bottom: 50px;
+  .option {
+    padding: 1em 1.5em;
+    border: 1px solid var(--red);
+    box-shadow: 2px 2px var(--red);
+    cursor: pointer;
+  }
 }
